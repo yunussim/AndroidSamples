@@ -1,8 +1,10 @@
 package yunussimulya.gmail.com.mysample
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import yunussimulya.gmail.com.mysample.databinding.ProgressActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         textview_2.text = "Halo yunus"
 
         bDataBinding.setOnClickListener {
-
+            val intent = Intent(applicationContext, ProgressActivity::class.java)
+            startActivity(intent)
         }
     }
 
