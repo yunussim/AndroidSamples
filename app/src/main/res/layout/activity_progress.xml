@@ -10,6 +10,9 @@
         <variable
             name="presenter"
             type="yunussimulya.gmail.com.mysample.databinding.ProgressActivityPresenter" />
+
+        <import type="yunussimulya.gmail.com.mysample.databinding.Converter"/>
+
     </data>
 
     <LinearLayout
@@ -32,6 +35,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@={progress.progressText}"/>
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={Converter.intToString(tvProgress, progress.progress, progress.progress)}"/>
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edProgress"
+            android:inputType="number"
+            android:text="@={Converter.intToString(edProgress, progress.progress, progress.progress)}" />
 
     </LinearLayout>
 
