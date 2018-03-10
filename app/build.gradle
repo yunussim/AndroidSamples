@@ -45,6 +45,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -53,12 +54,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    compile "com.android.support:support-v13:${androidSupportLibVersion}"
-    compile "com.android.support:cardview-v7:${androidSupportLibVersion}"
-    compile "com.android.support:recyclerview-v7:${androidSupportLibVersion}"
-    compile "com.android.support:palette-v7:${androidSupportLibVersion}"
-    compile "com.android.support:design:${androidSupportLibVersion}"
-    compile "com.android.support:appcompat-v7:${androidSupportLibVersion}"
+    implementation "com.android.support:support-v13:${androidSupportLibVersion}"
+    implementation "com.android.support:cardview-v7:${androidSupportLibVersion}"
+    implementation "com.android.support:recyclerview-v7:${androidSupportLibVersion}"
+    implementation "com.android.support:palette-v7:${androidSupportLibVersion}"
+    implementation "com.android.support:design:${androidSupportLibVersion}"
+    implementation "com.android.support:appcompat-v7:${androidSupportLibVersion}"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
 }

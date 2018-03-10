@@ -12,21 +12,15 @@
         android:orientation="vertical"
         tools:context="yunussimulya.gmail.com.mysample.MainActivity">
 
-        <TextView
-            android:id="@+id/sample_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!" />
-
-        <TextView
-            android:id="@+id/textview_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!" />
-
         <Button
             android:id="@+id/bDataBinding"
             android:text="Data Binding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bOldApache"
+            android:text="Old Apache"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
