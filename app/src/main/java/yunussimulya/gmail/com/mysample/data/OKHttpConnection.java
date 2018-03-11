@@ -30,11 +30,6 @@ import yunussimulya.gmail.com.mysample.model.ConnectionResult;
 
 public class OKHttpConnection {
 
-    private static final int timeoutConnection = 10000;
-    private static final int timeoutSocket = 10000;
-
-    private static final int longTimeoutConnection = 180000;
-    private static final int longTimeoutSocket = 180000;
 
     public static Request GET(String url, HashMap<String, String> headers) {
         Request.Builder result = new Request.Builder()
