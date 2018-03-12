@@ -21,7 +21,8 @@
         <activity android:name=".databinding.ProgressActivity" />
         <activity android:name=".FirstActivity" />
         <activity android:name=".activity.OldApacheActivity" />
-        <activity android:name=".activity.OKHttpActivity"></activity>
+        <activity android:name=".activity.OKHttpActivity" />
+        <activity android:name=".activity.RetrofitActivity"></activity>
     </application>
 
 </manifest>

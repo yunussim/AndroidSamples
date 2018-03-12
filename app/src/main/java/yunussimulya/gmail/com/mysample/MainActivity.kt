@@ -6,6 +6,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import yunussimulya.gmail.com.mysample.activity.OKHttpActivity
 import yunussimulya.gmail.com.mysample.activity.OldApacheActivity
+import yunussimulya.gmail.com.mysample.activity.RetrofitActivity
 import yunussimulya.gmail.com.mysample.databinding.ProgressActivity
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         }
         bOKHttp.setOnClickListener {
             val intent = Intent(applicationContext, OKHttpActivity::class.java)
+            startActivity(intent)
+        }
+        bRetrofit.setOnClickListener {
+            val intent = Intent(applicationContext, RetrofitActivity::class.java)
             startActivity(intent)
         }
     }
