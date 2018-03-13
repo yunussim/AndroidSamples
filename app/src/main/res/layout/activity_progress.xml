@@ -50,6 +50,11 @@
             android:inputType="number"
             android:text="@={Converter.intToString(edProgress, progress.progress, progress.progress)}" />
 
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="@={progress.progress}"/>
+
     </LinearLayout>
 
 </layout>
