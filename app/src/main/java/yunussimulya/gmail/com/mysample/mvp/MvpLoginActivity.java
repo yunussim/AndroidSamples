@@ -7,7 +7,12 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import yunussimulya.gmail.com.mysample.R;
+import yunussimulya.gmail.com.mysample.data.PostmanfitClient;
+import yunussimulya.gmail.com.mysample.listener.PostmanfitInterface;
 
 public class MvpLoginActivity extends AppCompatActivity implements LoginContract.View {
 
@@ -28,7 +33,6 @@ public class MvpLoginActivity extends AppCompatActivity implements LoginContract
 
         bLogin.setOnClickListener(v -> {
             presenter.validateCredentials(edUsername.getText().toString(), edPassword.getText().toString());
-            Log.e("login", "clicked");
         });
     }
 
@@ -53,7 +57,7 @@ public class MvpLoginActivity extends AppCompatActivity implements LoginContract
     }
 
     @Override
-    public void showSuccess() {
-        Snackbar.make(bLogin, "Sukses", Snackbar.LENGTH_SHORT).show();
+    public void showMessage(String message) {
+        Snackbar.make(bLogin, message, Snackbar.LENGTH_SHORT).show();
     }
 }

@@ -16,7 +16,7 @@ public interface LoginContract {
 
         void setPasswordError(String error);
 
-        void showSuccess();
+        void showMessage(String message);
 
     }
 
