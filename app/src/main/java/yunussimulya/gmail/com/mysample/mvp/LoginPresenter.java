@@ -36,10 +36,13 @@ public class LoginPresenter implements LoginContract.Presenter {
             view.setPasswordError("Password harus diisi");
             return;
         }
+
         PostmanfitInterface client = PostmanfitClient.getClient().create(PostmanfitInterface.class);
+        view.showProgress();
         client.login(username, password).enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
+                view.hideProgress();
                 String result = response.body();
                 try {
                     JSONObject object = new JSONObject(result);
@@ -53,6 +56,7 @@ public class LoginPresenter implements LoginContract.Presenter {
 
             @Override
             public void onFailure(Call<String> call, Throwable t) {
+                view.hideProgress();
                 view.showMessage("Fail to contact the server");
             }
         });
