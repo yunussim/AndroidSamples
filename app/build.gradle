@@ -8,6 +8,7 @@ ext {
     //library version
     androidSupportLibVersion = "26.1.0"
     playServicesLibVersion = "11.8.0"
+    retrofitVersion = "2.3.0"
 }
 
 android {
@@ -63,8 +64,10 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
     implementation group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
-    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation "com.squareup.okhttp3:okhttp:3.10.0"
+    implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:converter-scalars:${retrofitVersion}"
     implementation 'com.google.code.gson:gson:2.8.0'
+
 }
