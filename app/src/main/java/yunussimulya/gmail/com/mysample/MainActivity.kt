@@ -8,6 +8,7 @@ import yunussimulya.gmail.com.mysample.activity.OKHttpActivity
 import yunussimulya.gmail.com.mysample.activity.OldApacheActivity
 import yunussimulya.gmail.com.mysample.activity.RetrofitActivity
 import yunussimulya.gmail.com.mysample.databinding.ProgressActivity
+import yunussimulya.gmail.com.mysample.mvp.MvpLoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,6 +38,10 @@ class MainActivity : AppCompatActivity() {
         }
         bRetrofit.setOnClickListener {
             val intent = Intent(applicationContext, RetrofitActivity::class.java)
+            startActivity(intent)
+        }
+        bMvpLogin.setOnClickListener {
+            val intent = Intent(applicationContext, MvpLoginActivity::class.java)
             startActivity(intent)
         }
     }

@@ -19,6 +19,12 @@
             android:layout_height="wrap_content" />
 
         <Button
+            android:id="@+id/bMvpLogin"
+            android:text="MVP-Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
             android:id="@+id/bOldApache"
             android:text="Old Apache"
             android:layout_width="match_parent"
