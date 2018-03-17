@@ -2,7 +2,6 @@ package yunussimulya.gmail.com.mysample.mvp;
 
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
-import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,7 +9,7 @@ import org.json.JSONObject;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import yunussimulya.gmail.com.mysample.data.PostmanfitClient;
+import yunussimulya.gmail.com.mysample.network.PostmanfitClient;
 import yunussimulya.gmail.com.mysample.listener.PostmanfitInterface;
 
 /**

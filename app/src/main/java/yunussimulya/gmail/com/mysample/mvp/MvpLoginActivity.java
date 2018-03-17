@@ -3,18 +3,12 @@ package yunussimulya.gmail.com.mysample.mvp;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 import yunussimulya.gmail.com.mysample.R;
-import yunussimulya.gmail.com.mysample.data.PostmanfitClient;
-import yunussimulya.gmail.com.mysample.listener.PostmanfitInterface;
 
 public class MvpLoginActivity extends AppCompatActivity implements LoginContract.View {
 

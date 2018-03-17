@@ -1,4 +1,4 @@
-package yunussimulya.gmail.com.mysample.activity;
+package yunussimulya.gmail.com.mysample.activity.simple;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import yunussimulya.gmail.com.mysample.R;
 import yunussimulya.gmail.com.mysample.data.DataHandler;
-import yunussimulya.gmail.com.mysample.data.OKHttpConnection;
+import yunussimulya.gmail.com.mysample.network.OKHttpConnection;
 
 public class OKHttpActivity extends AppCompatActivity {
 

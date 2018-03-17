@@ -1,4 +1,4 @@
-package yunussimulya.gmail.com.mysample.data;
+package yunussimulya.gmail.com.mysample.network;
 
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;

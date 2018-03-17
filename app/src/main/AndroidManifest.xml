@@ -20,9 +20,9 @@
         </activity>
         <activity android:name=".databinding.ProgressActivity" />
         <activity android:name=".FirstActivity" />
-        <activity android:name=".activity.OldApacheActivity" />
-        <activity android:name=".activity.OKHttpActivity" />
-        <activity android:name=".activity.RetrofitActivity" />
+        <activity android:name=".activity.simple.OldApacheActivity" />
+        <activity android:name=".activity.simple.OKHttpActivity" />
+        <activity android:name=".activity.simple.RetrofitActivity" />
         <activity android:name=".mvp.MvpLoginActivity"></activity>
     </application>
 

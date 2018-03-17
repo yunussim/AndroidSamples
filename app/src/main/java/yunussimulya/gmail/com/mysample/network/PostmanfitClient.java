@@ -1,4 +1,4 @@
-package yunussimulya.gmail.com.mysample.data;
+package yunussimulya.gmail.com.mysample.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;

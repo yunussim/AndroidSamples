@@ -1,4 +1,4 @@
-package yunussimulya.gmail.com.mysample.data;
+package yunussimulya.gmail.com.mysample.network;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

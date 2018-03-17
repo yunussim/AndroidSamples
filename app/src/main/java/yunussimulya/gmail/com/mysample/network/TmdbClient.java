@@ -1,4 +1,4 @@
-package yunussimulya.gmail.com.mysample.data;
+package yunussimulya.gmail.com.mysample.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Yunus on 3/11/2018.
  */
 
-public class RetrofitClient {
+public class TmdbClient {
 
     public static final String API_KEY = "108faf9494718ba593d60bbec84d992c";
 
