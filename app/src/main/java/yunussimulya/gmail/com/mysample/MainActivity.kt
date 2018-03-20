@@ -4,10 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
-import yunussimulya.gmail.com.mysample.activity.simple.OKHttpActivity
-import yunussimulya.gmail.com.mysample.activity.simple.OldApacheActivity
-import yunussimulya.gmail.com.mysample.activity.simple.ReactiveRetrofitActivity
-import yunussimulya.gmail.com.mysample.activity.simple.RetrofitActivity
+import yunussimulya.gmail.com.mysample.activity.simple.*
 import yunussimulya.gmail.com.mysample.databinding.ProgressActivity
 import yunussimulya.gmail.com.mysample.mvp.MvpLoginActivity
 
@@ -43,6 +40,14 @@ class MainActivity : AppCompatActivity() {
         }
         bMvpLogin.setOnClickListener {
             val intent = Intent(applicationContext, MvpLoginActivity::class.java)
+            startActivity(intent)
+        }
+        bReactive.setOnClickListener {
+            val intent = Intent(applicationContext, ReactiveActivity::class.java)
+            startActivity(intent)
+        }
+        bGlide.setOnClickListener {
+            val intent = Intent(applicationContext, GlideSimpleActivity::class.java)
             startActivity(intent)
         }
     }

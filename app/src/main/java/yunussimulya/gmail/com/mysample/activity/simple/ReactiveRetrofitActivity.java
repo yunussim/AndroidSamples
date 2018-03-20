@@ -6,11 +6,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.List;
+
 import io.reactivex.Observable;
+import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import yunussimulya.gmail.com.mysample.R;
 import yunussimulya.gmail.com.mysample.listener.TmdbApiService;
+import yunussimulya.gmail.com.mysample.model.Movie;
 import yunussimulya.gmail.com.mysample.model.MovieResponse;
 import yunussimulya.gmail.com.mysample.network.TmdbClient;
 
@@ -34,8 +39,29 @@ public class ReactiveRetrofitActivity extends AppCompatActivity {
         Observable<MovieResponse> obj = api.getObservableTopRated(TmdbClient.API_KEY);
         obj.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(movieResponse -> {
-                    Log.e("response", movieResponse.getMovies().get(0).getTitle());
+                .subscribe(new Observer<MovieResponse>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(MovieResponse value) {
+                        List<Movie> movies = value.getMovies();
+                        for (Movie movie : movies) {
+                            Log.e("rx-movie", movie.getTitle());
+                        }
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
                 });
     }
 }
