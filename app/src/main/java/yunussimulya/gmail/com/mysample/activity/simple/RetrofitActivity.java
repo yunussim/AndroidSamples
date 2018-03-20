@@ -11,7 +11,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import yunussimulya.gmail.com.mysample.R;
 import yunussimulya.gmail.com.mysample.network.TmdbClient;
-import yunussimulya.gmail.com.mysample.listener.RetrofitInterface;
+import yunussimulya.gmail.com.mysample.listener.TmdbApiService;
 import yunussimulya.gmail.com.mysample.model.Movie;
 import yunussimulya.gmail.com.mysample.model.MovieResponse;
 
@@ -31,7 +31,7 @@ public class RetrofitActivity extends AppCompatActivity {
     }
 
     private void call() {
-        RetrofitInterface apiService = TmdbClient.getClient().create(RetrofitInterface.class);
+        TmdbApiService apiService = TmdbClient.getClient().create(TmdbApiService.class);
         Call<MovieResponse> topRated = apiService.getTopRated(TmdbClient.API_KEY);
         topRated.enqueue(new Callback<MovieResponse>() {
             @Override

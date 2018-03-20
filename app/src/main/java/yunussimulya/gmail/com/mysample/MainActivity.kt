@@ -6,6 +6,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import yunussimulya.gmail.com.mysample.activity.simple.OKHttpActivity
 import yunussimulya.gmail.com.mysample.activity.simple.OldApacheActivity
+import yunussimulya.gmail.com.mysample.activity.simple.ReactiveRetrofitActivity
 import yunussimulya.gmail.com.mysample.activity.simple.RetrofitActivity
 import yunussimulya.gmail.com.mysample.databinding.ProgressActivity
 import yunussimulya.gmail.com.mysample.mvp.MvpLoginActivity
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         bRetrofit.setOnClickListener {
-            val intent = Intent(applicationContext, RetrofitActivity::class.java)
+            val intent = Intent(applicationContext, ReactiveRetrofitActivity::class.java)
             startActivity(intent)
         }
         bMvpLogin.setOnClickListener {

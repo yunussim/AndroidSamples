@@ -1,4 +1,4 @@
-package yunussimulya.gmail.com.mysample.data;
+package yunussimulya.gmail.com.mysample.data.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -19,7 +19,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
     }
 
     @Override

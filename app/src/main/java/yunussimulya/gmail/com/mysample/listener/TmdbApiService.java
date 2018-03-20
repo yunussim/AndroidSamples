@@ -1,7 +1,7 @@
 package yunussimulya.gmail.com.mysample.listener;
 
-import java.util.List;
-
+import io.reactivex.Flowable;
+import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -13,7 +13,7 @@ import yunussimulya.gmail.com.mysample.model.MovieResponse;
  * Created by Yunus on 3/11/2018.
  */
 
-public interface RetrofitInterface {
+public interface TmdbApiService {
 
     /*
     @Path – variable substitution for the API endpoint. For example movie id will be swapped for{id} in the URL endpoint.
@@ -30,4 +30,10 @@ public interface RetrofitInterface {
 
     @GET("movie/{id}")
     Call<Movie> getMovieDetail(@Path("id") int id, @Query("api_key") String apiKey);
+
+    @GET("movie/top_rated")
+    Observable<MovieResponse> getObservableTopRated(@Query("api_key") String apiKey);
+
+    @GET("movie/{id}")
+    Observable<Movie> getObservableMovieDetail(@Path("id") int id, @Query("api_key") String apiKey);
 }
