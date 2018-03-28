@@ -35,7 +35,7 @@ public class OKHttpActivity extends AppCompatActivity {
     }
 
     private void makeRequest() {
-        String url = "https://www.jualo.com/categories.json";
+        String url = "https://www.jualo.com/categories.cihuy";
         HashMap<String, String> headers = new HashMap<>();
         headers.put("Authorization", DataHandler.getB64Auth("jualo", "railsrails"));
 
