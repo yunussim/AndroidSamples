@@ -17,4 +17,8 @@ public class CounterViewModel extends ViewModel {
         counter.setValue(++number);
     }
 
+    public int getNumber() {
+        return number;
+    }
+
 }
