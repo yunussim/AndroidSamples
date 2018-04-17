@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import yunussimulya.gmail.com.mysample.activity.simple.*
 import yunussimulya.gmail.com.mysample.databinding.ProgressActivity
 import yunussimulya.gmail.com.mysample.mvp.MvpLoginActivity
+import yunussimulya.gmail.com.mysample.mvvm.SimpleMVVMActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -48,6 +49,10 @@ class MainActivity : AppCompatActivity() {
         }
         bGlide.setOnClickListener {
             val intent = Intent(applicationContext, GlideSimpleActivity::class.java)
+            startActivity(intent)
+        }
+        bMvvmSimple.setOnClickListener {
+            val intent = Intent(applicationContext, SimpleMVVMActivity::class.java)
             startActivity(intent)
         }
     }

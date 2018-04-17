@@ -26,7 +26,8 @@
         <activity android:name=".mvp.MvpLoginActivity" />
         <activity android:name=".activity.simple.ReactiveRetrofitActivity" />
         <activity android:name=".activity.simple.ReactiveActivity" />
-        <activity android:name=".activity.simple.GlideSimpleActivity"></activity>
+        <activity android:name=".activity.simple.GlideSimpleActivity" />
+        <activity android:name=".mvvm.SimpleMVVMActivity"></activity>
     </application>
 
 </manifest>
