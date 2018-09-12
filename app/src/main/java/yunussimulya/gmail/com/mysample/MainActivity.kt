@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import yunussimulya.gmail.com.mysample.activity.dagger.DaggerActivity
 import yunussimulya.gmail.com.mysample.activity.simple.*
 import yunussimulya.gmail.com.mysample.databinding.ProgressActivity
 import yunussimulya.gmail.com.mysample.mvp.MvpLoginActivity
@@ -53,6 +54,10 @@ class MainActivity : AppCompatActivity() {
         }
         bMvvmSimple.setOnClickListener {
             val intent = Intent(applicationContext, SimpleMVVMActivity::class.java)
+            startActivity(intent)
+        }
+        bDagger.setOnClickListener {
+            val intent = Intent(applicationContext, DaggerActivity::class.java)
             startActivity(intent)
         }
     }

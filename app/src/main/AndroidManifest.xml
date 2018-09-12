@@ -27,7 +27,8 @@
         <activity android:name=".activity.simple.ReactiveRetrofitActivity" />
         <activity android:name=".activity.simple.ReactiveActivity" />
         <activity android:name=".activity.simple.GlideSimpleActivity" />
-        <activity android:name=".mvvm.SimpleMVVMActivity"></activity>
+        <activity android:name=".mvvm.SimpleMVVMActivity" />
+        <activity android:name=".activity.dagger.DaggerActivity"></activity>
     </application>
 
 </manifest>
