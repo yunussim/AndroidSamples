@@ -60,6 +60,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, DaggerActivity::class.java)
             startActivity(intent)
         }
+        bCamera.setOnClickListener {
+            val intent = Intent(applicationContext, CameraActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }
