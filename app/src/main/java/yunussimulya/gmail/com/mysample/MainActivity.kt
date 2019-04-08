@@ -12,14 +12,6 @@ import yunussimulya.gmail.com.mysample.mvvm.SimpleMVVMActivity
 
 class MainActivity : AppCompatActivity() {
 
-    companion object {
-        init {
-            System.loadLibrary("native-lib")
-        }
-    }
-
-    external fun stringFromJNI(): String
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
